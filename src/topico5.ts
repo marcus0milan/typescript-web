@@ -1,4 +1,6 @@
 
+
+
 const v_nota: number = 7.2;
 let situacao_final: string;
 
@@ -10,7 +12,8 @@ if (v_nota >= 7) {
     situacao_final = "Reprovado";
 }
 console.log("Situação do aluno:");
-console.log(Média: ${v_nota} - ${situacao_final});
+console.log(`Média: ${v_nota} - ${situacao_final}`);
+
 
 
 const x_dia: number = 3;
@@ -18,22 +21,22 @@ let desc_dia: string;
 
 switch (x_dia) {
     case 1:
-    desc_dia = "Domingo";
-    break;
+        desc_dia = "Domingo";
+        break;
     case 2:
         desc_dia = "Segunda-feira";
         break;
     case 3:
-    desc_dia = "Terça-feira";
-    break;
+        desc_dia = "Terça-feira";
+        break;
     case 4:
         desc_dia = "Quarta-feira";
         break;
     default:
-    desc_dia = "Dia não cadastrado";
+        desc_dia = "Dia não cadastrado";
 }
 console.log("\nDia da semana:");
-console.log(O número ${x_dia} corresponde a ${desc_dia});
+console.log(`O número ${x_dia} corresponde a ${desc_dia}`);
 
 
 
@@ -43,9 +46,10 @@ console.log("\nVerificação de idade:");
 console.log(status_idade);
 
 
+
 console.log("\nContagem com for:");
 for (let i: number = 1; i <= 5; i++) {
-console.log(Esta é a ${i}ª repetição);
+    console.log(`Esta é a ${i}ª repetição`);
 }
 
 
@@ -54,16 +58,17 @@ console.log("\nTentativas disponíveis:");
 let qtd: number = 3;
 
 while (qtd > 0) {
-    console.log(Você ainda tem ${qtd} tentativas);
-qtd--;
+    console.log(`Você ainda tem ${qtd} tentativas`);
+    qtd--;
 }
 console.log("Não restam mais tentativas.");
+
 
 
 console.log("\nFrutas disponíveis:");
 const lst_frutas: string[] = ["banana", "maçã", "uva"];
 lst_frutas.forEach((item: string, idx: number): void => {
-    console.log(${idx + 1} - ${item});
+    console.log(`${idx + 1} - ${item}`);
 });
 
 
