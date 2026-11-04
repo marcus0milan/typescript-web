@@ -61,7 +61,6 @@ function aplica_desconto(
 }
 
 
-
 escrever("--- Testes de funções ---");
 
 escrever("Soma: " + faz_soma(10, 4));
