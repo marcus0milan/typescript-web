@@ -1,7 +1,7 @@
-function saudacao(nome: string): string {
-    return `Olá, ${nome}!`;
-}
+let a: string = "Hello Fatec!";
+let b: number = 10;
+let c: boolean = true;
 
-const usuario: string = "Marcus";
-
-console.log(saudacao(usuario));
+console.log(a);
+console.log(b);
+console.log(c);
