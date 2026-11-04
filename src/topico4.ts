@@ -2,7 +2,7 @@ let nome: string = "Chen";
 let media: number = 10;
 let aprovado: boolean = true;
 
-console.log("=====Exemplo de variáveis com tipos primitivos=====");
+console.log("=====Exemplo de variáveis com tipos primitivos: String, number e boolean=====");
 console.log("Informações do aluno: " + nome)
 console.log("Média final: " + media);
 console.log("Aprovado? " + aprovado);
