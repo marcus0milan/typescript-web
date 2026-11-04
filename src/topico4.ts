@@ -10,15 +10,17 @@ console.log("Aprovado? " + aprovado);
 let alunos: string[] = ["Chen", "Marcus", "Guilherme"];
 let notas: number[] = [10, 7, 9];
 
-console.log("=====Exemplo do uso de Arrays=====");
+console.log("\n=====Exemplo do uso de Arrays=====");
 console.log("NOME DO ALUNO | NOTA FINAL");
 console.log(alunos[0] + " | " + notas[0]);
 console.log(alunos[1] + " | " + notas[1]);
 console.log(alunos[2] + " | " + notas[2]);
 
+
 let aluno: [string, number, number] = ["Marcus", 22, 8.5];
 
-console.log("=====Exemplo do uso de Tuplas=====");
+console.log("\n=====Exemplo do uso de Tuplas=====");
 console.log("NOME: " + aluno[0]);
 console.log("IDADE: " + aluno[1]);
 console.log("NOTA: " + aluno[2]);
+
