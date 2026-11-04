@@ -1,3 +1,7 @@
+const saida = document.getElementById("topico6");
+function escrever(texto) {
+    saida.innerHTML += texto + "\n";
+}
 function faz_soma(val_a, val_b) {
     return val_a + val_b;
 }
@@ -8,7 +12,7 @@ function checa_par(num) {
     return num % 2 === 0;
 }
 function exibe_aviso(msg) {
-    console.log("AVISO:", msg);
+    escrever("AVISO: " + msg);
 }
 function calcula_media_turma(notas) {
     if (notas.length === 0) {
@@ -32,18 +36,18 @@ function monta_perfil(nome_pessoa, anos) {
 function aplica_desconto(preco_prod, desc_pct = 10) {
     return preco_prod - (preco_prod * desc_pct) / 100;
 }
-console.log("--- Testes de funções ---");
-console.log("Soma:", faz_soma(10, 4));
-console.log(monta_saudacao("Carlos"));
-console.log("8 é par?", checa_par(8));
-console.log("9 é par?", checa_par(9));
+escrever("--- Testes de funções ---");
+escrever("Soma: " + faz_soma(10, 4));
+escrever(monta_saudacao("Carlos"));
+escrever("8 é par? " + checa_par(8));
+escrever("9 é par? " + checa_par(9));
 exibe_aviso("Isso é um teste do void");
-console.log("Média das notas:", calcula_media_turma([6, 8, 10]));
-console.log("Multiplicação:", mult(3, 7));
-console.log(monta_perfil("Mariana", 22));
-console.log(monta_perfil("Roberto"));
-console.log("Preço com desconto normal:", aplica_desconto(150));
-console.log("Preço com desconto maior:", aplica_desconto(150, 30));
+escrever("Média das notas: " + calcula_media_turma([6, 8, 10]));
+escrever("Multiplicação: " + mult(3, 7));
+escrever(monta_perfil("Mariana", 22));
+escrever(monta_perfil("Roberto"));
+escrever("Preço com desconto normal: " + aplica_desconto(150));
+escrever("Preço com desconto maior: " + aplica_desconto(150, 30));
 export {};
 // Exemplos de chamadas que apresentam erros de tipagem
 // faz_soma("texto", 3);
