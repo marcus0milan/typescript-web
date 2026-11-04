@@ -4,8 +4,8 @@ let aprovado: boolean = true;
 
 console.log("=====Exemplo de variáveis com tipos primitivos=====");
 console.log("Informações do aluno: " + nome)
-console.log(media);
-console.log(aprovado);
+console.log("Média final: " + media);
+console.log("Aprovado? " + aprovado);
 
 let alunos: string[] = ["Chen", "Marcus", "Guilherme"];
 let notas: number[] = [10, 7, 9];
