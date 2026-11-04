@@ -1,5 +1,8 @@
+const saida = document.getElementById("topico6")!;
 
-
+function escrever(texto: string): void {
+    saida.innerHTML += texto + "\n";
+}
 
 function faz_soma(val_a: number, val_b: number): number {
     return val_a + val_b;
@@ -17,7 +20,7 @@ function checa_par(num: number): boolean {
 
 
 function exibe_aviso(msg: string): void {
-    console.log("AVISO:", msg);
+    escrever("AVISO: " + msg);
 }
 
 
@@ -59,26 +62,26 @@ function aplica_desconto(
 
 
 
-console.log("--- Testes de funções ---");
+escrever("--- Testes de funções ---");
 
-console.log("Soma:", faz_soma(10, 4));
+escrever("Soma: " + faz_soma(10, 4));
 
-console.log(monta_saudacao("Carlos"));
+escrever(monta_saudacao("Carlos"));
 
-console.log("8 é par?", checa_par(8));
-console.log("9 é par?", checa_par(9));
+escrever("8 é par? " + checa_par(8));
+escrever("9 é par? " + checa_par(9));
 
 exibe_aviso("Isso é um teste do void");
 
-console.log("Média das notas:", calcula_media_turma([6, 8, 10]));
+escrever("Média das notas: " + calcula_media_turma([6, 8, 10]));
 
-console.log("Multiplicação:", mult(3, 7));
+escrever("Multiplicação: " + mult(3, 7));
 
-console.log(monta_perfil("Mariana", 22));
-console.log(monta_perfil("Roberto"));
+escrever(monta_perfil("Mariana", 22));
+escrever(monta_perfil("Roberto"));
 
-console.log("Preço com desconto normal:", aplica_desconto(150));
-console.log("Preço com desconto maior:", aplica_desconto(150, 30));
+escrever("Preço com desconto normal: " + aplica_desconto(150));
+escrever("Preço com desconto maior: " + aplica_desconto(150, 30));
 
 
 // Exemplos de chamadas que apresentam erros de tipagem
